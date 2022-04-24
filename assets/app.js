@@ -10,3 +10,13 @@ import './styles/app.css';
 
 // start the Stimulus application
 import './bootstrap';
+
+import React from 'react';
+import ReactDom from 'react-dom';
+
+const App = () => {
+    return <h1>Bonjour à tous !</h1>;
+}
+
+const rootElement = document.querySelector("#app");
+ReactDom.render(<App />, rootElement);
